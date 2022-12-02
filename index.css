@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(Montserrat-Regular.ttf);
+}
+
+
+@font-face {
+    font-family: 'ZonaPro';
+    src: url(ZonaPro.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +19,11 @@
 }
 
 body{
-    background: white;
+    background: #ebebeb;
 }
 
 header{
+    font-family: 'ZonaPro';
     width: 100%;
     height: 80px;
     background: #ffffff;
@@ -34,7 +46,7 @@ display: flex;
 }
 .navbar ul li a{
     display: block;
-    color: rgb(33, 32, 32);
+    color: #004e98;
     font-size: 15px;
     padding: 10px 25px;
     border-radius: 50px;
@@ -44,24 +56,93 @@ display: flex;
 
 .navbar ul li a:hover{
     color: #ffffff;
-    color: rgb(33, 32, 32);
+    color: #004e98;
     border: thin;
     border-style: groove;
     border-radius: 20px;
-    border-color: rgb(33, 32, 32)
+    border-color: #004e98;
 }
 
 .navbar ul li a.active {
     color: #ffffff;
-    background: rgb(33, 32, 32);
+    background: #004e98;
     border-color: #ffffff;
-    box-shadow: rgb(33, 32, 32);
+    box-shadow: #14213D;
 }
 
-.BG{
-    background-image: url(media/IMG_0166.jpg);
+section .secimport{
+    background-color: black;
+    
 }
 
+section .importBG{
+    background-color: #004e98;
+    color: #ffffff;
+    text-align: left;
+    margin: 15px 380px;
+    border-radius: 10px;
+    font-size: 30px ;
+    padding: 30px;
+    font-weight: bolder;
+   position: relative;
+
+}
+
+.important{
+   
+    font-size: 18px; 
+    padding-top: 10px;
+    font-weight: lighter;
+}
+
+.register{
+    background-color: #FF6700;
+    /* position: absolute;
+    right: 30px;
+    top: 35px; */
+    margin-left: 622px;
+    margin-right:50px;
+    margin-top: -50px;
+    margin-bottom: 15px;
+    font-weight: lighter;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+/* section .section1 img{
+    height: 610px;
+    margin: 0px 10px;
+    border-radius: 10px; 
+} */
+
+section .section1{
+    background-image: url('media/easter.jpg');
+    background-color: white ;
+    margin: 15px 375px;
+    position: relative;
+    border-radius: 10px;
+    height: 611px;
+    width: 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section .section1:hover{
+    background-image: url('media/IMG_0166.jpg');
+    background-color: white ;
+    margin: 15px 375px;
+    position: relative;
+    border-radius: 10px;
+    height: 611px;
+    width: 55%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 @media only screen and (max-width: 1320px){
     header{
         padding:0 50px;
@@ -83,7 +164,7 @@ display: flex;
         .option .line{
             width: 30px;
             height:3px;
-            background: rgb(33, 32, 32);
+            background: #004e98;
             margin: 6px 0;
         }
     }
