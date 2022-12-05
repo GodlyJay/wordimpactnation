@@ -9,21 +9,22 @@
     src: url(ZonaPro.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
     font-family: 'Montserrat';
     box-sizing: border-box;
+    color: white;
 }
 
-body{
+body {
     background: #ebebeb;
 }
 
-header{
-    font-family: 'ZonaPro';
+header {
+
     width: 100%;
     height: 80px;
     background: #ffffff;
@@ -32,19 +33,23 @@ header{
     justify-content: space-between;
     padding: 0 100px;
 }
-.logo{
+
+.logo {
     display: flex;
-height: 70px;
-    
-    
+    height: 70px;
+
+
 }
-.option{
+
+.option {
     display: none;
 }
-.navbar ul{
-display: flex;
+
+.navbar ul {
+    display: flex;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     display: block;
     color: #004e98;
     font-size: 15px;
@@ -54,8 +59,8 @@ display: flex;
     margin: 0 5px;
 }
 
-.navbar ul li a:hover{
-    color: #ffffff;
+.navbar ul li a:hover {
+
     color: #004e98;
     border: thin;
     border-style: groove;
@@ -70,48 +75,49 @@ display: flex;
     box-shadow: #14213D;
 }
 
-section .secimport{
+section .secimport {
     background-color: black;
-    
+
 }
 
-section .importBG{
+section .importBG {
     background-color: #004e98;
     color: #ffffff;
     text-align: left;
     margin: 15px 380px;
     border-radius: 10px;
-    font-size: 30px ;
+    font-size: 30px;
     padding: 30px;
     font-weight: bolder;
-   position: relative;
+    position: relative;
 
 }
 
-.important{
-   
-    font-size: 18px; 
+.important {
+
+    font-size: 18px;
     padding-top: 10px;
     font-weight: lighter;
 }
 
-.register{
+.register {
     background-color: #FF6700;
-    /* position: absolute;
-    right: 30px;
-    top: 35px; */
-    margin-left: 622px;
-    margin-right:50px;
+    margin-left: 620px;
+    margin-right: 30px;
     margin-top: -50px;
     margin-bottom: 15px;
     font-weight: lighter;
     font-size: 16px;
     border-radius: 5px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    box-shadow: #000;
+
+}
+
+.register:hover {
+    padding: 10px 31px;
+    background-color: #ff6f10;
 }
 
 /* section .section1 img{
@@ -120,50 +126,110 @@ section .importBG{
     border-radius: 10px; 
 } */
 
-section .section1{
-    background-image: url('media/easter.jpg');
-    background-color: white ;
+section .section1 {
+    background-image: url('media/egya1.jpg');
+    background-color: white;
     margin: 15px 375px;
     position: relative;
     border-radius: 10px;
     height: 611px;
     width: 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.9s;
 }
 
-section .section1:hover{
-    background-image: url('media/IMG_0166.jpg');
-    background-color: white ;
+section .section1:hover {
+    background-image: url('media/egya.jpg');
+    background-color: white;
     margin: 15px 375px;
     position: relative;
     border-radius: 10px;
     height: 611px;
     width: 55%;
-  background-size: contain;
-  background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-@media only screen and (max-width: 1320px){
-    header{
-        padding:0 50px;
+
+
+.sermon-ash {
+    color: #000;
+    font-weight: bold;
+    border-radius: 25px;
+    position: absolute;
+    top: 85%;
+    font-size: 10px;
+    margin: 10px;
+    padding: 2px 10px;
+    background-color: #ebebeb;
+    opacity: 0.8;
+}
+
+.broad {
+    text-align: left;
+    margin: 0.5% 68% 0% 22%;
+    padding: 5px;
+    color: #000;
+    border: thick;
+    border-color: #000;
+
+
+}
+
+section .section_2 {
+    display: flex;
+    gap: 60px;
+    text-align: center;
+    margin: 5px 320px 10px 320px;
+    align-items: stretch;
+    align-content: center;
+    box-shadow: #000;
+}
+
+.section_2 li {
+    text-align: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0px 5px;
+    margin-top: 10px;
+    align-items: stretch;
+}
+
+.section_2 li a {
+    background: rgb(244, 240, 240);
+    padding: 10px 50px;
+    color: #000;
+    align-items: stretch;
+    border-radius: 5px;
+}
+
+.section_2 li a:hover {
+    padding: 15px 55px;
+
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
     }
 }
 
-@media only screen and (max-width: 1100px){
-    header{
-        padding:0 30px;
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
     }
 }
 
-@media only screen and (max-width: 900px){
-    header{
-        .option{
+@media only screen and (max-width: 900px) {
+    header {
+        .option {
             display: block;
             cursor: content;
         }
-        .option .line{
+
+        .option .line {
             width: 30px;
-            height:3px;
+            height: 3px;
             background: #004e98;
             margin: 6px 0;
         }
